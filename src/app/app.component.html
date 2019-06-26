@@ -1,0 +1,21 @@
+<!-- Using A KeyPress Event -->
+
+<div class="container">
+    <h5 class="text-primary">By using KeyPress Event to Allow Only Numbers</h5>
+    <mat-form-field class="example-full-width">
+        <input (keypress)="numberOnly($event)" matInput placeholder="Enter Mobile Number" autocomplete="off">
+        <mat-error>Enter only Digits</mat-error>
+    </mat-form-field>
+</div>
+
+
+<!-- Using Directives -->
+
+<div class="container">
+    <h5 class="text-success">By using Directives to Allow Only Numbers</h5>
+    <mat-form-field class="example-full-width">
+        <input numberOnly matInput placeholder="Enter Mobile Number" autocomplete="off">
+        <mat-error>Enter only Digits</mat-error>
+    </mat-form-field>
+</div>
+
